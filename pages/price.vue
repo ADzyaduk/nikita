@@ -1,12 +1,9 @@
 <template>
-    <div>
-        чет про цены
-    </div>
+    <PricePage />
 </template>
 
 <script>
 
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

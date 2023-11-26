@@ -1,12 +1,15 @@
 <template>
     <div>
-        Чет про контакты
+dsadsa
     </div>
 </template>
 
 <script>
-
+    export default {
+        
+    }
 </script>
 
 <style lang="scss" scoped>
+
 </style>

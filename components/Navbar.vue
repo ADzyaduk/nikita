@@ -11,23 +11,19 @@
                     <img src="/logo.png" alt="logo" class="" width="300px">
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <ULink to="/" active-class="text-primary"
+                    <ULink to="/" active-class="text-primary dark:text-indigo-500"
                         inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
                         Главная
                     </ULink>
-                    <ULink to="price" active-class="text-primary"
+                    <ULink to="price" active-class="text-primary dark:text-indigo-500"
                         inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
                         Цены
                     </ULink>
-                    <ULink to="galery" active-class="text-primary"
+                    <ULink to="galery" active-class="text-primary dark:text-indigo-500"
                         inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
                         Галерея
                     </ULink>
-                    <ULink to="rewievs" active-class="text-primary"
-                        inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
-                        Отзывы
-                    </ULink>
-                    <ULink to="contacts" active-class="text-primary"
+                    <ULink to="contacts" active-class="text-primary dark:text-indigo-500"
                         inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
                         Контакты
                     </ULink>
