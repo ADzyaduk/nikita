@@ -8,7 +8,7 @@
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <img src="/logo.png" alt="logo" class="" width="300px">
+                    <img src="/logo.png" alt="logo" class="" width="250px">
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <ULink to="/" active-class="text-primary dark:text-indigo-500"

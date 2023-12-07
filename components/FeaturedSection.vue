@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center p-8">
+    <div class="text-center p-8 mb-14">
         <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             Почему Механизированная Покраска - Выбор №1?
         </h2>
@@ -82,4 +82,5 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

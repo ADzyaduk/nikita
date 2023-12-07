@@ -5,8 +5,6 @@
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-    <Footer />
-    <BotomNav/>
-    
+    <StickyFooter />
   </div>
 </template>
