@@ -16,12 +16,11 @@
                             Комерческие помещения
                         </h2>
                     </div>
-                    <p class="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">Product details for Product Type 1
-                    </p>
                     <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 150₽
+                        <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 200₽
                             м²</span><span class="text-sm font-semibold leading-6 text-gray-700 dark:text-gray-300"></span>
                     </p>
+
                     <UButton to="price" color="lime" block class="mt-6">Button</UButton>
                     <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-700 dark:text-gray-300 xl:mt-10">
                         <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -52,10 +51,8 @@
                             помещения
                         </h2>
                     </div>
-                    <p class="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">Product details for Product Type 1
-                    </p>
                     <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 150₽
+                        <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 250₽
                             м²</span><span class="text-sm font-semibold leading-6 text-gray-700 dark:text-gray-300"></span>
                     </p>
                     <UButton to="price" block color="lime" class="mt-6">Button</UButton>
@@ -88,8 +85,6 @@
                             Промышленные помещения
                         </h2>
                     </div>
-                    <p class="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">Product details for Product Type 1
-                    </p>
                     <p class="mt-6 flex items-baseline gap-x-1">
                         <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 150₽
                             м²</span><span class="text-sm font-semibold leading-6 text-gray-700 dark:text-gray-300"></span>
