@@ -1,5 +1,6 @@
 <script setup>
-import { ref, computed, watch } from 'vue';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const items = [
     {
@@ -48,27 +49,15 @@ const prices = {
         { name: 'Покраска потолка (2 слоя)', price: 250, unit: 'м²' },
     ],
 };
+const activeTab = ref($context.params.tabKey || 'prom');
 
-const selectedTab = ref(items[0].key);
-const selectedServices = ref([]);
+const onTabChange = (tabKey) => {
+    $context.router.push({ params: { tabKey } });
+};
 
-function toggleService(service) {
-    const index = selectedServices.value.findIndex((item) => item.name === service.name);
-    if (index === -1) {
-        selectedServices.value.push(service);
-    } else {
-        selectedServices.value.splice(index, 1);
-    }
-}
-
-const totalSum = computed(() => {
-    return selectedServices.value.reduce((sum, service) => sum + service.price, 0);
+onMounted(() => {
+    // ваш текущий код, который выполнится при монтировании компонента
 });
-
-watch(selectedTab, () => {
-    selectedServices.value = [];
-});
-
 
 </script>
 
@@ -79,7 +68,7 @@ watch(selectedTab, () => {
             Предлагаем ознакомиться с ценовой таблицей на наши виды в городе Казань на 2024 г.
         </p>
 
-        <UTabs :items="items" v-model="selectedTab" class="w-full mb-14">
+        <UTabs :items="items" :activeTab="$route.params.tabKey" @change-tab="onTabChange" class="w-full mb-14">
             <template #item="{ item }">
                 <UCard>
                     <table class="table-fixed w-full">
@@ -90,10 +79,9 @@ watch(selectedTab, () => {
                                 <th class="text-center">Единица измерения</th>
                             </tr>
                         </thead>
+
                         <tbody>
-                            <tr v-for="price in prices[item.key]" :key="price.name"
-                                :class="{ 'bg-gray-300 dark:bg-lime-900': selectedServices.some((service) => service.name === price.name) }"
-                                @click="toggleService(price)">
+                            <tr v-for="price in prices[item.key]" :key="price.name">
                                 <td class="text-center">{{ price.name }}</td>
                                 <td class="text-center">{{ price.price }}</td>
                                 <td class="text-center">{{ price.unit }}</td>
@@ -104,13 +92,6 @@ watch(selectedTab, () => {
                     <div class="mt-4">
                         <ComonServices />
                         <CoveringServices />
-                        <p class="text-lg font-semibold">Выбранные услуги:</p>
-                        <ul>
-                            <li v-for="service in selectedServices" :key="service.name">
-                                {{ service.name }} - {{ service.price }} {{ service.unit }}
-                            </li>
-                        </ul>
-                        <p class="text-lg font-semibold mt-2">Итого: {{ totalSum }} руб.</p>
                     </div>
                 </UCard>
             </template>
