@@ -5,7 +5,7 @@
                 class="hover:text-lime-500 dark:hover:text-indigo-500">Покраска в городе Казань</a>.
         </span>
         <div
-            class="flex flex-wrap items-center justify-between mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 space-x-6">
+            class="flex flex-wrap md:hidden items-center justify-between mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 space-x-6">
             <ULink to="/" active-class="text-lime-500 dark:text-indigo-500"
                 inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
                 Главная
