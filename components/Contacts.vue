@@ -31,7 +31,7 @@
                             <div class="flex items-start">
                                 <div class="shrink-0">
                                     <div class="inline-block rounded-md bg-slate-600 dark:bg-gray-800 p-4 text-primary">
-                                      <icon name="lucide:phone-call" size="35px"/>
+                                        <icon name="lucide:phone-call" size="35px" />
                                     </div>
                                 </div>
                                 <div class="ml-6 grow">
@@ -49,7 +49,7 @@
                             <div class="flex items-start">
                                 <div class="shrink-0">
                                     <div class="inline-block rounded-md bg-slate-600 dark:bg-gray-800 p-4 text-primary">
-                                      <icon name="material-symbols:mail-outline" size="35px"/>
+                                        <icon name="material-symbols:mail-outline" size="35px" />
                                     </div>
                                 </div>
                                 <div class="ml-6 grow">
@@ -66,7 +66,7 @@
                             <div class="align-start flex">
                                 <div class="shrink-0">
                                     <div class="inline-block rounded-md bg-slate-600 dark:bg-gray-800 p-4 text-primary">
-                                      <icon name="logos:whatsapp-icon" size="35px"/>
+                                        <icon name="logos:whatsapp-icon" size="35px" />
                                     </div>
                                 </div>
                                 <div class="ml-6 grow">
@@ -84,7 +84,7 @@
                             <div class="align-start flex">
                                 <div class="shrink-0">
                                     <div class="inline-block rounded-md bg-slate-600 dark:bg-gray-800 p-4 text-primary">
-                                      <icon name="logos:telegram" size="35px"/>
+                                        <icon name="logos:telegram" size="35px" />
                                     </div>
                                 </div>
                                 <div class="ml-6 grow">

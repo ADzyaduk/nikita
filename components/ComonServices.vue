@@ -5,9 +5,9 @@
         <table class="table-fixed w-full">
             <tbody>
                 <tr v-for="service in commonServices" :key="service.name">
-                    <td class="text-center">{{ service.name }}</td>
-                    <td class="text-center">{{ service.price }}</td>
-                    <td class="text-center">{{ service.unit }}</td>
+                    <td class="text-center border border-lime-500 dark:border-indigo-500">{{ service.name }}</td>
+                    <td class="text-center border border-lime-500 dark:border-indigo-500">{{ service.price }}</td>
+                    <td class="text-center border border-lime-500 dark:border-indigo-500">{{ service.unit }}</td>
                 </tr>
             </tbody>
         </table>
