@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar />
+    <HeaderTest/>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
