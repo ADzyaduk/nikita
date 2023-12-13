@@ -1,3 +1,44 @@
+<script>
+import axios from 'axios'
+export default {
+    data() {
+        return {
+            formData: {
+                name: '',
+                phone: '',
+                text: ''
+            }
+        };
+    },
+    methods: {
+        async submitForm() {
+            try {
+                const response = await axios.post(
+                    `https://api.telegram.org/bot${'6849693417:AAEhtkyzlwPWpfcHucqmLS_jbiskfQNI7c0'}/sendMessage`,
+                    {
+                        chat_id: '-1002054840999',
+                        text: `Имя: ${this.formData.name}\nТелефон: ${this.formData.phone}\nСообщение: ${this.formData.text}`,
+                    }
+                );
+
+                if (response.status === 200) {
+                    // Message sent successfully
+                } else {
+                    console.error("Error sending message:", response);
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                // Добавьте здесь логику обработки ошибок
+            }
+        }
+    }
+};
+
+</script>
+
+
+<style lang="scss" scoped></style>
+
 <template>
     <!-- Container for demo purpose -->
     <div class="container my-24 mx-auto md:px-6">
@@ -13,16 +54,16 @@
                 <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                     <form>
                         <div class="relative mb-6" data-te-input-wrapper-init>
-                            <UInput placeholder="Имя"></UInput>
+                            <UInput v-model="formData.name" color="lime" placeholder="Имя"></UInput>
                         </div>
                         <div class="relative mb-6" data-te-input-wrapper-init>
-                            <UInput placeholder="Телефон"></UInput>
+                            <UInput v-model="formData.phone" type="tel" color="lime" placeholder="Телефон"></UInput>
                         </div>
                         <div class="relative mb-6" data-te-input-wrapper-init>
-                            <UTextarea placeholder="Сообщение"></UTextarea>
+                            <UTextarea v-model="formData.text" color="lime" placeholder="Сообщение"></UTextarea>
                         </div>
 
-                        <UButton block label="Отправить" color="lime"></UButton>
+                        <UButton @click="submitForm" block label="Отправить" color="lime"></UButton>
                     </form>
                 </div>
                 <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
@@ -105,9 +146,3 @@
     </div>
 </template>
 
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-</style>
