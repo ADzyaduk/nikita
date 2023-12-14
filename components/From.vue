@@ -15,7 +15,7 @@
                         <UTextarea type="text" v-model="formState.text" placeholder="Сообщение"></UTextarea>
                     </UFormGroup>
 
-                    <UButton block label="Отправить" color="lime" type="submit" />
+                    <UButton block label="Отправить" color="lime" type="submit" @click="onSubmit"/>
                 </UForm>
             </UCard>
         </UContainer>
@@ -30,6 +30,7 @@ import { ref } from 'vue';
 import axios from 'axios';
 import { z } from 'zod';
 import type { FormSubmitEvent } from '#ui/types';
+
 
 const toast = useToast();
 
@@ -61,7 +62,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             formState.value.name = '';
             formState.value.phone = '';
             formState.value.text = '';
-            toast({ title: 'Сообщение отправлено!', variant: 'success' });
+            toast.add({ title: 'Сообщение отправлено!' });
         } else {
             console.error("Error sending message:", response);
         }
