@@ -4,6 +4,7 @@
         <FeaturedSection />
         <Featured />
         <Price />
+        <From/>
     </div>
 </template>
 
