@@ -1,40 +1,66 @@
 <script>
-import axios from 'axios'
+import axios from 'axios';
+import Zod from 'zod';
+
+
+const toast = useToast();
+
+const formSchema = Zod.object({
+    name: Zod.string().min(2).max(50),
+    phone: Zod.string().min(10).max(15),
+    text: Zod.string().min(5).max(500),
+});
+
 export default {
     data() {
         return {
             formData: {
                 name: '',
                 phone: '',
-                text: ''
-            }
+                text: '',
+            },
+            formErrors: {
+                name: '',
+                phone: '',
+                text: '',
+            },
         };
     },
     methods: {
         async submitForm() {
             try {
+                const validatedData = formSchema.parse(this.formData);
                 const response = await axios.post(
                     `https://api.telegram.org/bot${'6849693417:AAEhtkyzlwPWpfcHucqmLS_jbiskfQNI7c0'}/sendMessage`,
                     {
                         chat_id: '-1002054840999',
-                        text: `Имя: ${this.formData.name}\nТелефон: ${this.formData.phone}\nСообщение: ${this.formData.text}`,
+                        text: `Имя: ${validatedData.name}\nТелефон: ${validatedData.phone}\nСообщение: ${validatedData.text}`,
                     }
                 );
 
                 if (response.status === 200) {
-                    // Message sent successfully
+                    this.formData.name = '';
+                    this.formData.phone = '';
+                    this.formData.text = '';
+                    toast({ title: 'Сообщение отправлено!', variant: 'success' });
                 } else {
                     console.error("Error sending message:", response);
                 }
             } catch (error) {
-                console.error("Error submitting form:", error);
-                // Добавьте здесь логику обработки ошибок
+                if (error instanceof Zod.ZodError) {
+                    this.formErrors = error.errors.reduce((errors, { path, message }) => {
+                        errors[path[0]] = message;
+                        return errors;
+                    }, {});
+                } else {
+                    console.error("Error submitting form:", error);
+                }
             }
-        }
-    }
+        },
+    },
 };
-
 </script>
+
 
 
 <style lang="scss" scoped></style>
@@ -55,12 +81,15 @@ export default {
                     <form>
                         <div class="relative mb-6" data-te-input-wrapper-init>
                             <UInput v-model="formData.name" color="lime" placeholder="Имя"></UInput>
+                            <span class="text-red-500">{{ formErrors.name }}</span>
                         </div>
                         <div class="relative mb-6" data-te-input-wrapper-init>
                             <UInput v-model="formData.phone" type="tel" color="lime" placeholder="Телефон"></UInput>
+                            <span class="text-red-500">{{ formErrors.phone }}</span>
                         </div>
                         <div class="relative mb-6" data-te-input-wrapper-init>
                             <UTextarea v-model="formData.text" color="lime" placeholder="Сообщение"></UTextarea>
+                            <span class="text-red-500">{{ formErrors.text }}</span>
                         </div>
 
                         <UButton @click="submitForm" block label="Отправить" color="lime"></UButton>

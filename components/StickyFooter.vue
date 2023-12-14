@@ -1,6 +1,6 @@
 <template>
     <footer
-        class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-lime-500shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-neutral-900 dark:border-indigo-500">
+        class="fixed bottom-0 left-0 z-20 w-full p-4 bg-slate-800 border-t border-lime-500shadow md:flex md:items-center md:justify-between md:p-6  dark:border-indigo-500">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/"
                 class="hover:text-lime-500 dark:hover:text-indigo-500">Покраска в городе Казань</a>.
         </span>

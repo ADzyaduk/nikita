@@ -4,11 +4,11 @@
 </script>
 
 <template>
-    <div class="bg-cover bg-center flex items-top justify-center h-[300px] bg-slate-800">
+    <div class="bg-cover bg-center flex items-top justify-center h-[200px] bg-slate-800">
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <img src="~/assets/logo.png" alt="logo" class="" width="250px">
+                    <img src="~/assets/logo2.png" alt="logo" class="" width="350px">
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <ULink to="/" active-class="text-lime-500 dark:text-indigo-500"
