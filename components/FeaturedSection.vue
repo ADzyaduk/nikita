@@ -4,7 +4,7 @@
             Почему Механизированная Покраска - Выбор №1?
         </h2>
 
-        <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="flex flex-wrap items-center mt-20 text-left">
             <div class="w-full md:w-3/5 lg:w-1/2 px-4">
                 <img src="/img/img1.jpg" alt="gem"
                     class="inline-block rounded shadow-lg border border-merino-400">
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="flex flex-wrap items-center mt-20 text-left">
             <div class="w-full md:w-3/5 lg:w-1/2 px-4">
                 <img src="/img/img2.jpeg" alt="project members"
                     class="inline-block rounded shadow-lg border border-merino-400">
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap items-center mt-20 text-left  text-center">
+        <div class="flex flex-wrap items-center mt-20 text-left">
             <div class="w-full md:w-3/5 lg:w-1/2 px-4">
                 <img src="/img/img3.jpeg" alt="editor"
                     class="inline-block rounded shadow-lg border border-merino-400">
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="flex flex-wrap items-center mt-20 text-left">
             <div class="w-full md:w-3/5 lg:w-1/2 px-4">
                 <img src="/img/img4.jpeg" alt="bulk editing"
                     class="inline-block rounded shadow-lg border border-merino-400">
