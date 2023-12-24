@@ -1,11 +1,13 @@
 <template>
     <div>
-        <FeaturedSection />
+        <About />
     </div>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+useHead({
+  title: '',
+})
 </script>
 
 <style lang="scss" scoped></style>

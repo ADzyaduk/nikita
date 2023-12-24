@@ -4,8 +4,10 @@
     </div>
 </template>
 
-<script>
-
+<script setup lang="ts">
+useHead({
+  title: 'Галерея',
+})
 </script>
 
 <style lang="scss" scoped>
