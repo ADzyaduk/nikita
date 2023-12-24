@@ -109,9 +109,9 @@ export default {
                                     <p class="mb-2 font-bold dark:text-white">
                                         Email
                                     </p>
-                                    <ULink to="mailto:info@lorem.mail" active-class="text-lime-500 dark:text-indigo-500"
+                                    <ULink to="mailto:pokraska-kzn@yandex.ru" active-class="text-lime-500 dark:text-indigo-500"
                                         inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
-                                        Nekit6681@yandex.ru</ULink>
+                                        pokraska-kzn@yandex.ru</ULink>
                                 </div>
                             </div>
                         </div>
@@ -142,9 +142,9 @@ export default {
                                 </div>
                                 <div class="ml-6 grow">
                                     <p class="mb-2 font-bold dark:text-white">Telegramm</p>
-                                    <p class="text-neutral-500 dark:text-neutral-200">
-                                        +1 234-567-89
-                                    </p>
+                                    <ULink to="https://t.me/+79372979997" active-class="text-lime-500 dark:text-indigo-500"
+                                        inactive-class="font-semibold text-gray-500 dark:text-gray-400 hover:text-lime-500 dark:hover:text-indigo-500">
+                                        +7 937 297 99 97</ULink>
                                 </div>
                             </div>
                         </div>

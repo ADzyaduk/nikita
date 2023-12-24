@@ -2,10 +2,10 @@
     <Tabs />
 </template>
 
-<script>
-
-
-
+<script setup lang="ts">
+useHead({
+  title: 'Цены',
+})
 </script>
 
 <style lang="scss" scoped>
