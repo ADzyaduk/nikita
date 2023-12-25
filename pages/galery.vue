@@ -6,9 +6,9 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Галерея',
+    
+    title: 'Галерея',
 })
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

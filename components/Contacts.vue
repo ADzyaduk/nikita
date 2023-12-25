@@ -1,48 +1,44 @@
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
-const toast = useToast();
+// const toast = useToast();
 
-export default {
-    data() {
-        return {
-            formData: {
-                name: '',
-                phone: '',
-                text: '',
-            },
-        };
-    },
-    methods: {
-        async submitForm() {
-            try {
-                const response = await axios.post(
-                    `https://api.telegram.org/bot${'6849693417:AAEhtkyzlwPWpfcHucqmLS_jbiskfQNI7c0'}/sendMessage`,
-                    {
-                        chat_id: '-1002054840999',
-                        text: `Имя: ${this.formData.name}\nТелефон: ${this.formData.phone}\nСообщение: ${this.formData.text}`,
-                    }
-                );
+// export default {
+//     data() {
+//         return {
+//             formData: {
+//                 name: '',
+//                 phone: '',
+//                 text: '',
+//             },
+//         };
+//     },
+//     methods: {
+//         async submitForm() {
+//             try {
+//                 const response = await axios.post(
+//                     `https://api.telegram.org/bot${'6849693417:AAEhtkyzlwPWpfcHucqmLS_jbiskfQNI7c0'}/sendMessage`,
+//                     {
+//                         chat_id: '-1002054840999',
+//                         text: `Имя: ${this.formData.name}\nТелефон: ${this.formData.phone}\nСообщение: ${this.formData.text}`,
+//                     }
+//                 );
 
-                if (response.status === 200) {
-                    this.formData.name = '';
-                    this.formData.phone = '';
-                    this.formData.text = '';
-                    toast({ title: 'Сообщение отправлено!', variant: 'success' });
-                } else {
-                    console.error("Error sending message:", response);
-                }
-            } catch (error) {
-                console.error("Error submitting form:", error);
-            }
-        },
-    },
-};
+//                 if (response.status === 200) {
+//                     this.formData.name = '';
+//                     this.formData.phone = '';
+//                     this.formData.text = '';
+//                     toast({ title: 'Сообщение отправлено!', variant: 'success' });
+//                 } else {
+//                     console.error("Error sending message:", response);
+//                 }
+//             } catch (error) {
+//                 console.error("Error submitting form:", error);
+//             }
+//         },
+//     },
+// };
 </script>
-
-
-
-
 
 
 <style lang="scss" scoped></style>
@@ -61,22 +57,6 @@ export default {
             <div class="flex flex-wrap">
                 <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
                     <From/>
-                    <!-- <form>
-                        <div class="relative mb-6" data-te-input-wrapper-init>
-                            <UInput v-model="formData.name" color="lime" placeholder="Имя"></UInput>
-                            <span class="text-red-500">{{ formErrors.name }}</span>
-                        </div>
-                        <div class="relative mb-6" data-te-input-wrapper-init>
-                            <UInput v-model="formData.phone" type="tel" color="lime" placeholder="Телефон"></UInput>
-                            <span class="text-red-500">{{ formErrors.phone }}</span>
-                        </div>
-                        <div class="relative mb-6" data-te-input-wrapper-init>
-                            <UTextarea v-model="formData.text" color="lime" placeholder="Сообщение"></UTextarea>
-                            <span class="text-red-500">{{ formErrors.text }}</span>
-                        </div>
-
-                        <UButton @click="submitForm" block label="Отправить" color="lime"></UButton>
-                    </form> -->
                 </div>
                 <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
                     <div class="flex flex-wrap">
