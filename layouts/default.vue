@@ -1,13 +1,9 @@
 <template>
   <HeaderTest />
-  <div>
-    <slot/>
-  </div>
-
+  <slot />
   <StickyFooter />
 </template>
 
 <script setup lang="ts">
 
 </script>
-

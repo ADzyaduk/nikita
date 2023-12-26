@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: '',
+  title: 'Подробная информация',
 })
 </script>
 
