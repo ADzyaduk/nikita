@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-5" id="pricing">
+    <div class="pt-5 mb-5" id="pricing">
         <div class="mx-auto pb-20 mt-4 max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <p class="mt-2 text-4xl font-bold tracking-tight text-gray-800 dark:text-gray-300 sm:text-3xl">Цены и Тарифы
