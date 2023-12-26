@@ -7,13 +7,11 @@
                 <div class="max-w-xl mb-6">
                     <h2
                         class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-300 sm:text-4xl sm:leading-none">
-                        Профессиональная покраска<br class="hidden md:block" />
+                      Механизированная покраска<br class="hidden md:block" />
                         <span class="inline-block text-deep-purple-accent-400"></span>
                     </h2>
                     <p class="text-base text-gray-700 dark:text-gray-300 md:text-lg">
-                        Добро пожаловать на наш сайт, посвященный искусству преображения вашего пространства через
-                        профессиональную покраску. Наша компания предоставляет широкий спектр услуг по окраске, помогая
-                        создать новое впечатление и стиль вашего дома или офиса.
+                      Мы предлагаем качественное механизированное окрашивание поверхностей. Мы используем современное оборудование и материалы, что позволяет нам гарантировать высокое качество покрытия.
                     </p>
                 </div>
                 <div>

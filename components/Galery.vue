@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="mt-5 mb-32">
         <div class="max-w-6xl mx-auto duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view"
             style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
             <ul ref="gallery" id="gallery" class="grid grid-cols-2 gap-5 lg:grid-cols-5">
