@@ -54,7 +54,7 @@ const prices = {
 <template>
     <div>
         <p
-            class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-5 lg:py-2 text-center font-semibold">
+            class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-5 lg:py-2 text-center font-semibold text-gray-800 dark:text-gray-300">
             Мы предлагаем качественное окрашивание стен, потолков и других поверхностей с применением современных методов
             нанесения краски. Пожалуйста, ознакомьтесь с нашими ценами на услуги в Казани на 2024 год.
         </p>
@@ -62,22 +62,34 @@ const prices = {
         <UTabs :items="items" class="w-full mb-20 lg:mb-16">
             <template #item="{ item }">
                 <UCard>
-                    <table class="table-fixed w-full ">
+                    <table class="table-fixed w-full text-gray-800 dark:text-gray-300">
                         <thead>
                             <tr>
-                                <th class="text-center border-2 border-lime-500 dark:border-indigo-500">Наименование услуги
+                                <th
+                                    class="text-center border-2 border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
+                                    Наименование услуги
                                 </th>
-                                <th class="text-center border-2 border-lime-500 dark:border-indigo-500">Цена</th>
-                                <th class="text-center border-2 border-lime-500 dark:border-indigo-500">Единица измерения
+                                <th
+                                    class="text-center border-2 border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
+                                    Цена</th>
+                                <th
+                                    class="text-center border-2 border-lime-500 dark:border-indigo-300 text-gray-800 dark:text-gray-300">
+                                    Единица измерения
                                 </th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr v-for="price in prices[item.key]" :key="price.name">
-                                <td class="text-center border border-lime-500 dark:border-indigo-500">{{ price.name }}</td>
-                                <td class="text-center border border-lime-500 dark:border-indigo-500">{{ price.price }}</td>
-                                <td class="text-center border border-lime-500 dark:border-indigo-500">{{ price.unit }}</td>
+                                <td
+                                    class="text-center border border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
+                                    {{ price.name }}</td>
+                                <td
+                                    class="text-center border border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
+                                    {{ price.price }}</td>
+                                <td
+                                    class="text-center border border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
+                                    {{ price.unit }}</td>
                             </tr>
                         </tbody>
                     </table>

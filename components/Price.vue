@@ -19,7 +19,7 @@
                             м²</span><span class="text-sm font-semibold leading-6 text-gray-700 dark:text-gray-300"></span>
                     </p>
 
-                    <UButton to="price" color="lime" block class="mt-6">Button</UButton>
+                    <UButton to="price" color="lime" block class="mt-6" variant="outline">Подробнее</UButton>
                     <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-700 dark:text-gray-300 xl:mt-10">
                         <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none dark:text-white">
@@ -53,7 +53,7 @@
                         <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 250₽
                             м²</span><span class="text-sm font-semibold leading-6 text-gray-700 dark:text-gray-300"></span>
                     </p>
-                    <UButton to="price" block color="lime" class="mt-6">Button</UButton>
+                    <UButton to="price" block color="lime" class="mt-6" variant="outline">Подробнее</UButton>
                     <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-700 dark:text-gray-300 xl:mt-10">
                         <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true" class="h-6 w-5 flex-none dark:text-white">
@@ -87,7 +87,7 @@
                         <span class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300">От 150₽
                             м²</span><span class="text-sm font-semibold leading-6 text-gray-700 dark:text-gray-300"></span>
                     </p>
-                    <UButton to="price" color="lime" block class="mt-6">Button</UButton>
+                    <UButton to="price" color="lime" block variant="outline" class="mt-6">Подробнее</UButton>
 
                     <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-700 dark:text-gray-300 xl:mt-10">
                         <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
