@@ -73,7 +73,7 @@ const prices = {
                                     class="text-center border-2 border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
                                     Цена</th>
                                 <th
-                                    class="text-center border-2 border-lime-500 dark:border-indigo-300 text-gray-800 dark:text-gray-300">
+                                    class="text-center border-2 border-lime-500 dark:border-indigo-500 text-gray-800 dark:text-gray-300">
                                     Единица измерения
                                 </th>
                             </tr>
