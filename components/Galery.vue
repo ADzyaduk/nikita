@@ -52,7 +52,16 @@ export default {
                 '/gallery/8.jpeg',
                 '/gallery/9.jpeg',
                 '/gallery/10.jpg',
+                '/gallery/12.jpg',
                 '/gallery/11.jpg',
+                '/gallery/13.jpg',
+                '/gallery/14.jpg',
+                '/gallery/15.jpg',
+                '/gallery/16.jpg',
+                '/gallery/17.jpg',
+                '/gallery/18.jpg',
+                '/gallery/19.jpg',
+                '/gallery/20.jpg',
 
             ],
         };
