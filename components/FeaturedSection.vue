@@ -5,7 +5,7 @@
         </h2>
 
         <div class="flex flex-wrap items-center mt-20 text-left">
-            <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <div class="w-full md:w-3/5 lg:w-1/2 px-4 max-w-[500px] mx-auto">
                 <img src="/img/img1.jpg" alt="gem"
                     class="inline-block rounded shadow-lg border border-lime-500 dark:border-indigo-500">
             </div>
@@ -23,8 +23,8 @@
         </div>
 
         <div class="flex flex-wrap items-center mt-20 text-left">
-            <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-                <img src="/img/img2.jpeg" alt="project members"
+            <div class="w-full md:w-3/5 lg:w-1/2 px-4 max-w-[500px] mx-auto">
+                <img src="/img/333.jpg" alt="project members"
                     class="inline-block rounded shadow-lg border border-lime-500 dark:border-indigo-500">
             </div>
             <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
@@ -40,7 +40,7 @@
         </div>
 
         <div class="flex flex-wrap items-center mt-20 text-left">
-            <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <div class="w-full md:w-3/5 lg:w-1/2 px-4 max-w-[500px] mx-auto">
                 <img src="/img/img3.jpeg" alt="editor"
                     class="inline-block rounded shadow-lg border border-lime-500 dark:border-indigo-500">
             </div>
@@ -58,8 +58,8 @@
         </div>
 
         <div class="flex flex-wrap items-center mt-20 text-left">
-            <div class="w-full md:w-3/5 lg:w-1/2 px-4">
-                <img src="/img/img4.jpeg" alt="bulk editing"
+            <div class="w-full md:w-3/5 lg:w-1/2 px-4 max-w-[500px] mx-auto">
+                <img src="/img/444.jpg" alt="bulk editing"
                     class="inline-block rounded shadow-lg border border-lime-500 dark:border-indigo-500">
             </div>
             <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
