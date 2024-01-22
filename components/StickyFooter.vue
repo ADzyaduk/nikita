@@ -16,7 +16,6 @@
                 variant="link" />
             <UButton to="https://t.me/+79372979997" icon="i-ic-baseline-telegram" size="sm" color="lime" square
                 variant="link" />
-
         </div>
 
         <div
@@ -45,4 +44,5 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
