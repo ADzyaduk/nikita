@@ -4,11 +4,11 @@ const isOpen = ref(false)
 
 <template>
     <div>
-        <UButton label="Узнать больше" variant="outline" icon="i-heroicons-arrow-right-20-solid"  :trailing="true" color="lime" @click="isOpen = true" />
+        <UButton label="Узнать больше" variant="outline" icon="i-heroicons-arrow-right-20-solid" :trailing="true"
+            color="lime" @click="isOpen = true" />
 
         <USlideover v-model="isOpen">
             <div class="p-4 flex-1">
-                <Placeholder class="h-full" />
                 <h1 class="text-2xl font-bold mb-4 text-center">Механизированная покраска</h1>
                 <p class="mb-4">Механизированная покраска — это процесс нанесения краски на поверхность с помощью
                     специального
@@ -29,45 +29,45 @@ const isOpen = ref(false)
                     <li>Возможность использования различных типов красок</li>
                     <li>Подходит для больших поверхностей и поверхностей сложной формы</li>
                     <li>Экономия краски</li>
-                </ul>    
-                    <h1 class="text-2xl font-bold mb-4 text-center">Информация при выборе окрасочных материалов</h1>
-                    <p class="mb-4">Окрасочные материалы играют важную роль в нашей повседневной жизни. Они используются для
-                        защиты,
-                        украшения и
-                        улучшения внешнего вида поверхностей.</p>
-                    <h2 class="text-xl font-bold mb-4">Типы окрасочных материалов</h2>
-                    <ul class="list-disc pl-6 mb-4">
-                        <li>Краски</li>
-                        <li>Лак</li>
-                        <li>Эмаль</li>
-                        <li>Грунтовка</li>
-                        <li>Пропитка</li>
-                    </ul>
-                    <h3 class="text-lg font-bold mb-4">Грунтовка</h3>
-                    <ul class="list-disc pl-6 mb-4">
-                        <li>Укрепляет основание</li>
-                        <li>Выравнивает поверхность</li>
-                        <li>Улучшает адгезию</li>
-                        <li>Защищает поверхность</li>
-                    </ul>
-                    <h2 class="text-xl font-bold mb-4">При выборе окрасочного материала важно учитывать следующие факторы:
-                    </h2>
-                    <ul class="list-disc pl-6 mb-4">
-                        <li>Тип поверхности</li>
-                        <li>Условия эксплуатации</li>
-                        <li>Эстетические требования</li>
-                    </ul>
-                    <h2 class="text-xl font-bold mb-4">Применение окрасочных материалов</h2>
-                    <ul class="list-disc pl-6 mb-4">
-                        <li>Кисть</li>
-                        <li>Валик</li>
+                </ul>
+                <h1 class="text-2xl font-bold mb-4 text-center">Информация при выборе окрасочных материалов</h1>
+                <p class="mb-4">Окрасочные материалы играют важную роль в нашей повседневной жизни. Они используются для
+                    защиты,
+                    украшения и
+                    улучшения внешнего вида поверхностей.</p>
+                <h2 class="text-xl font-bold mb-4">Типы окрасочных материалов</h2>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Краски</li>
+                    <li>Лак</li>
+                    <li>Эмаль</li>
+                    <li>Грунтовка</li>
+                    <li>Пропитка</li>
+                </ul>
+                <h3 class="text-lg font-bold mb-4">Грунтовка</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Укрепляет основание</li>
+                    <li>Выравнивает поверхность</li>
+                    <li>Улучшает адгезию</li>
+                    <li>Защищает поверхность</li>
+                </ul>
+                <h2 class="text-xl font-bold mb-4">При выборе окрасочного материала важно учитывать следующие факторы:
+                </h2>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Тип поверхности</li>
+                    <li>Условия эксплуатации</li>
+                    <li>Эстетические требования</li>
+                </ul>
+                <h2 class="text-xl font-bold mb-4">Применение окрасочных материалов</h2>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Кисть</li>
+                    <li>Валик</li>
                     <li>Пульверизатор</li>
                     <li>Распыление</li>
                 </ul>
                 <p>Следовательно, окрасочные материалы играют важную роль в нашей повседневной жизни. Они используются
                     для защиты,
                     украшения и улучшения внешнего вида поверхностей.</p>
-        </div>
-    </USlideover>
-</div></template>
-
+            </div>
+        </USlideover>
+    </div>
+</template>

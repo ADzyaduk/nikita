@@ -7,14 +7,15 @@
                 <div class="max-w-xl mb-6">
                     <h2
                         class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-300 sm:text-4xl sm:leading-none">
-                      Механизированная покраска<br class="hidden md:block" />
+                        Механизированная покраска<br class="hidden md:block" />
                         <span class="inline-block text-deep-purple-accent-400"></span>
                     </h2>
                     <p class="text-base text-gray-700 dark:text-gray-300 md:text-lg">
-                      Мы предлагаем качественное механизированное окрашивание поверхностей. Мы используем современное оборудование и материалы, что позволяет нам гарантировать высокое качество покрытия.
+                        Мы предлагаем качественное механизированное окрашивание поверхностей. Наша команда использует
+                        современное оборудование и материалы для обеспечения высокого качества покрытия.
                     </p>
                 </div>
-                <BtnSlideover/>
+                <BtnSlideover />
             </div>
             <div class="flex items-center justify-center -mx-4 lg:pl-8">
                 <div class="flex flex-col items-end px-3">
