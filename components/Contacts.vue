@@ -1,7 +1,8 @@
 <script>
 import axios from 'axios';
 
-const toast = useToast();
+
+// const toast = useToast();
 
 export default {
     data() {
@@ -28,7 +29,7 @@ export default {
                     this.formData.name = '';
                     this.formData.phone = '';
                     this.formData.text = '';
-                    toast({ title: 'Сообщение отправлено!', variant: 'success' });
+                    // toast({ title: 'Сообщение отправлено!', variant: 'success' });
                 } else {
                     console.error("Error sending message:", response);
                 }
